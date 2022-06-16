@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.formSubmit {
+  text-align: center;
+}
+.btn-submit {
+  padding: .2rem 1rem;
+  background-color: crimson;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.btn-submit:active {
+  background-color: rgba(220, 20, 60, 0.774);
+}

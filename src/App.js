@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import ArticleCreate from './practiceCRUD2/ArticlesCreate';
+// import ArticleSingle from './practiceCRUD2/ArticleSingle';
+import ArticleList from './practiceCRUD2/ArticlesList';
+import ArticleUpdate from './practiceCRUD2/ArticlesUpdate';
+import ArticleDelete from './practiceCRUD2/ArticlesDelete';
+import ArticlesFull from './practiceCRUD2/ArticlesFull';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Routes>
+        <Route path="/" element={<ArticleList />} />
+        <Route path="/create" element={<ArticleCreate />} />
+        <Route path="/:id" element={<ArticleSingle />} />
+        <Route path="/update/:id" element={<ArticleUpdate />} />
+        <Route path="/delete/:id" element={<ArticleDelete />} />
+      </Routes> */}
+
+      {/* <Routes>
+        <Route path='/create' element={<ArticleCreate/>}/>
+        <Route path='/:id' element={<ArticleSingle/>}/>
+        <Route path='/' element={<ArticleList/>}/>
+        <Route path='/update/:id' element={<ArticleUpdate/>}/>
+        <Route path='/delete/:id' element={<ArticleDelete/>}/>
+      </Routes> */}
+
+      {/* <Routes>
+        <Route path="/create" element={<ArticleCreate/>}/>
+        <Route path="/" element={<ArticleList/>}/>
+        <Route path="/:id" element={<ArticlesFull/>}/>
+        <Route path="/update/:id" element={<ArticleUpdate/>}/>
+        <Route path="/delete/:id" element={<ArticleDelete/>}/>
+      </Routes> */}
     </div>
   );
 }
